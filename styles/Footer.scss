@@ -1,0 +1,96 @@
+@import "./variables.scss";
+@import "./breakpoints.scss";
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px; /* Reduced the gap */
+  padding: 10px 20px; /* Reduced the padding */
+
+  @include lg {
+    padding: 10px 10px; /* Adjusted padding for larger screens */
+  }
+
+  &_left {
+    max-width: 200px; /* Reduced max-width */
+    flex: 1; /* Added flex property */
+
+    // img {
+    //   max-width: 100%; /* Set image to fit container */
+    //   height: auto; /* Maintain aspect ratio */
+    //   margin-bottom: 10px; /* Reduced margin */
+    // }
+
+    &_socials {
+      display: flex;
+      gap: 15px;
+
+      &_icon {
+        width: 30px; /* Reduced icon size */
+        height: 30px; /* Reduced icon size */
+        border-radius: 50%;
+        background-color: $pinkred;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        transition: all 0.5s ease-in-out;
+
+        &:hover {
+          transform: scale(1.2);
+        }
+      }
+    }
+  }
+
+  &_center {
+    flex: 1; /* Added flex property */
+    text-decoration: none;
+
+    ul {
+      list-style: none;
+      margin-top: 10px; /* Reduced margin */
+      cursor: pointer;
+
+      li:hover {
+        color: $pinkred;
+      }
+
+      a {
+        text-decoration: none;
+        color: black;
+
+        &:hover {
+          color: $pinkred;
+        }
+      }
+    }
+
+    @include md {
+      display: none;
+    }
+  }
+
+  &_right {
+    max-width: 200px; /* Reduced max-width */
+    flex: 1; /* Added flex property */
+
+    h3 {
+      margin-bottom: 10px; /* Reduced margin */
+    }
+
+    &_info {
+      display: flex;
+
+      p {
+        margin-left: 10px; /* Reduced margin */
+        margin-bottom: 10px; /* Reduced margin */
+      }
+    }
+
+    @include sm {
+      display: none;
+    }
+  }
+}
