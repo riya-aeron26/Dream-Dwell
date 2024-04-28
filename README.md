@@ -1,2 +1,4 @@
 # Dream-Dwell
-'Dream Dwell' full-stack project - to create a dynamic and user-friendly platform where people can manage details of their properties. 
+'Dream Dwell' - full-stack project is to create a dynamic and user-friendly platform where individuals can effortlessly showcase and manage details of their resort properties. Leveraging the power of React for the frontend interface ensures a modern and responsive user experience, allowing users to easily navigate the platform and interact with the features provided. By seamlessly connecting the frontend to a MongoDB backend, the project ensures efficient data storage and retrieval, enabling users to input, store, and manage information about their resorts securely.
+This project aims to cater to the needs of resort owners and enthusiasts by offering a centralized platform for creating and sharing resort details. Users can create personalized profiles, add comprehensive information about their resorts, including descriptions, amenities, location details, and images. The platform facilitates easy management of resort listings, allowing users to update, edit, or remove listings as needed.
+
